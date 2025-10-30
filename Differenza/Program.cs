@@ -15,9 +15,14 @@
         }
         static int QuadratoSomma(int a, int b)
         {
-            int Quadratosomma = 0;
+            int Quadratosomma = 0, somma = 0; 
 
-            Quadratosomma = Quadratosomma + QuadratoAB(a, b) * QuadratoAB(a, b);
+            for(int i = a; i<= b; i++)
+            {
+                somma = somma + i;
+            }
+
+            Quadratosomma = somma * somma;
 
             return Quadratosomma;
         }
